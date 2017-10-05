@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="RVM: ruby-2.4.1 [simple-puma-server]" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.15.4, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hanami-router (v1.0.1, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hanami-utils (v1.0.4, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http_router (v0.11.2, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="logger (v1.2.8, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v3.3.8, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.21.0, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v3.10.0, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.3, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sequel (v5.1.0, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="transproc (v1.0.2, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="url_mount (v0.2.1, RVM: ruby-2.4.1 [simple-puma-server]) [gem]" level="application" />
+  </component>
+</module>

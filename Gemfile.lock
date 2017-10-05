@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hanami-router (1.0.1)
+      hanami-utils (~> 1.0)
+      http_router (= 0.11.2)
+      rack (~> 2.0)
+    hanami-utils (1.0.4)
+      transproc (~> 1.0)
+    http_router (0.11.2)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
+    logger (1.2.8)
+    oj (3.3.8)
+    pg (0.21.0)
+    puma (3.10.0)
+    rack (2.0.3)
+    sequel (5.1.0)
+    transproc (1.0.2)
+    url_mount (0.2.1)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hanami-router
+  logger
+  oj
+  pg
+  puma
+  rack
+  sequel
+
+BUNDLED WITH
+   1.15.4
