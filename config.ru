@@ -1,26 +1,23 @@
-# require './server/actions/index'
-# require './server/actions/show'
-# require './server/actions/create'
-# require './server/actions/put'
-# require './server/actions/patch'
-# require './server/actions/delete'
-
 require './app/user/index'
 require './app/user/create'
 require './app/user/show'
 require './app/user/put'
 require './app/user/patch'
 require './app/user/delete'
+
 require 'hanami/router'
 
 app = Hanami::Router.new(parsers: [:json]) do
-  get     '/',          to: ->(env) { [200, {}, ['Welcome to API']] }
-  get     '/users',     to: ->(env) { User::Index.(env)             }
-  post    '/users',     to: ->(env) { User::Create.(env)            }
-  get     '/users/:id', to: ->(env) { User::Show.(env)              }
-  put     '/users/:id', to: ->(env) { User::Put.(env)               }
-  patch   '/users/:id', to: ->(env) { User::Patch.(env)             }
-  delete  '/users/:id', to: ->(env) { User::Delete.(env)            }
+
+  action = -> (klass) { ->(env) { klass.(env) } }
+
+  get     '/',          to: ->(_env) { [200, {}, ['Welcome to API']] }
+  get     '/users',     to: action.(User::Index)
+  post    '/users',     to: action.(User::Create)
+  get     '/users/:id', to: action.(User::Show)
+  put     '/users/:id', to: action.(User::Put)
+  patch   '/users/:id', to: action.(User::Patch)
+  delete  '/users/:id', to: action.(User::Delete)
 end
 
 Rack::Server.start app: app, Port: 3000
