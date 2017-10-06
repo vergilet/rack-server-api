@@ -7,7 +7,13 @@ require 'yaml'
 module Server
   module Core
     class Responder
-      DB = Sequel.connect YAML.load_file('config/database.yml').merge(logger: ::Logger.new('log/db.log'))
+      DB = Sequel.connect({adapter: :postgres,
+      host: 'ec2-79-125-119-70.eu-west-1.compute.amazonaws.com',
+      port: 5432,
+      database: 'd9pseukhs9ukkm',
+      user: 'pruwpijfbzumyl',
+      password: 'ff435e3a4ac5a829b4b7f39e845af3d66c8a404a9de521387ca1faefc1201ad5',
+      max_connections: 10}.merge(logger: ::Logger.new('log/db.log'))
 
       class << self
         def validate_fields(*fields)
