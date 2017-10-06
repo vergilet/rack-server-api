@@ -1,4 +1,4 @@
-threads_count = ENV.fetch('RAILS_MAX_THREADS') { 256 }.to_i
+threads_count = ENV.fetch('RAILS_MAX_THREADS') { 64 }.to_i
 threads threads_count, threads_count
 port ENV.fetch('PORT') { $PORT }
 environment ENV.fetch('RAILS_ENV') { 'production' }
