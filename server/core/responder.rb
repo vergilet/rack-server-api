@@ -13,7 +13,7 @@ module Server
       database: 'd9pseukhs9ukkm',
       user: 'pruwpijfbzumyl',
       password: 'ff435e3a4ac5a829b4b7f39e845af3d66c8a404a9de521387ca1faefc1201ad5',
-      max_connections: 10}.merge(logger: ::Logger.new('log/db.log'))
+      max_connections: 10}.merge(logger: ::Logger.new('log/db.log')))
 
       class << self
         def validate_fields(*fields)

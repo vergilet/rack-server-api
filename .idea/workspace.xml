@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4114bd7a-90f4-4218-9a7b-a445be885758" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/core/responder.rb" afterPath="$PROJECT_DIR$/server/core/responder.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,10 +80,10 @@
       <file leaf-file-name="responder.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/core/responder.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+            <state relative-caret-position="225">
+              <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
               <folding>
-                <marker date="1507293663000" expanded="true" signature="1380:2010" ph=" ... end" />
+                <marker date="1507293741000" expanded="true" signature="1381:2011" ph=" ... end" />
               </folding>
             </state>
           </provider>
@@ -396,12 +395,12 @@
       <workItem from="1507129213816" duration="11150000" />
       <workItem from="1507205148040" duration="28477000" />
       <workItem from="1507239959506" duration="1712000" />
-      <workItem from="1507266986746" duration="14113000" />
+      <workItem from="1507266986746" duration="14191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55452000" />
+    <option name="totallyTimeSpent" value="55530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="723" extended-state="0" />
@@ -816,10 +815,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/core/responder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        <state relative-caret-position="225">
+          <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
           <folding>
-            <marker date="1507293663000" expanded="true" signature="1380:2010" ph=" ... end" />
+            <marker date="1507293741000" expanded="true" signature="1381:2011" ph=" ... end" />
           </folding>
         </state>
       </provider>
