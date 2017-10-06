@@ -1,5 +1,3 @@
-
-
 require './app/endpoints/user/index'
 require './app/endpoints/user/create'
 require './app/endpoints/user/show'
@@ -27,4 +25,4 @@ router = Hanami::Router.new(parsers: [:json]) do
   get     '/accounts/:id', to: action.call(Account::Show)
 end
 
-Rack::Server.start app: router, Port: 3000
+Rack::Server.start app: router#, Port: ENV['PORT']
