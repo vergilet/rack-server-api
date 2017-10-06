@@ -1,8 +1,7 @@
-require './server/actions/show'
+require_relative '../user'
 
 module User
   class Show < ::Server::Actions::Show
-    db_name :users
     validate_fields :id
   end
 end

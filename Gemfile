@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'hanami-router'
+gem 'logger'
+gem 'oj'
+gem 'pg'
 gem 'puma'
 gem 'rack'
-gem 'oj'
 gem 'sequel'
-gem 'logger'
-gem 'pg'
-gem 'hanami-router'

@@ -2,22 +2,14 @@ require 'oj'
 require 'sequel'
 require 'logger'
 require 'pg'
+require 'yaml'
 
 module Server
   module Core
     class Responder
-
-      DB = Sequel.connect(
-        adapter: :postgres, host: '127.0.0.1', port: 5432,
-        database: 'thesystem_development_heroku', max_connections: 10,
-        logger: ::Logger.new('log/db.log')
-      )
+      DB = Sequel.connect YAML.load_file('config/database.yml').merge(logger: ::Logger.new('log/db.log'))
 
       class << self
-        def db_name(name)
-          @@name = name
-        end
-
         def validate_fields(*fields)
           @@fields = fields
         end
@@ -38,6 +30,14 @@ module Server
         @headers = default_response_headers
       end
 
+      def db_table
+        DB[db_table_name]
+      end
+
+      def db_table_name
+        Object.const_get(self.class.to_s.split('::').first).class_variable_get(:@@db_table_name)
+      end
+
       def call; end
 
       def to_rack_array
@@ -48,9 +48,7 @@ module Server
         @response_code || default_response_code
       end
 
-      def headers
-        @headers
-      end
+      attr_reader :headers
 
       def body
         {

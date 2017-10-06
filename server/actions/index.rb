@@ -4,7 +4,7 @@ module Server
   module Actions
     class Index < ::Server::Core::Read
       def fetch
-        DB[@@name].all
+        db_table.all
       end
     end
   end
