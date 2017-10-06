@@ -17,7 +17,7 @@ module Server
 
       class << self
         def validate_fields(*fields)
-          @@fields = fields
+          @fields = fields
         end
 
         def call(env)

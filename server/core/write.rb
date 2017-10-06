@@ -10,7 +10,11 @@ module Server
       private
 
       def valid_params?
-        @@fields.map { |field| params[field] }.all?
+        params_fields.map { |field| params[field] }.all?
+      end
+
+      def params_fields
+        self.class.instance_variable_get(:@fields)
       end
 
       def success; end
