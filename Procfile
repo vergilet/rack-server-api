@@ -1,1 +1,1 @@
-web: puma ./config.ru -e production -p$PORT
+web: puma ./config.rb

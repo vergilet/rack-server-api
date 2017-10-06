@@ -25,4 +25,4 @@ router = Hanami::Router.new(parsers: [:json]) do
   get     '/accounts/:id', to: action.call(Account::Show)
 end
 
-Rack::Server.start app: router#, Port: ENV['PORT']
+Rack::Server.start app: router #, Port: ENV['PORT']
