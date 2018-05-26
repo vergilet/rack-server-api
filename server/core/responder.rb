@@ -9,7 +9,7 @@ request_log_file = File.open('log/request.log', File::WRONLY | File::APPEND | Fi
 $logger = ::Logger.new(request_log_file)
 $logger.level = Logger::INFO
 
-$db_hash = YAML.load(File.read("config/database.yml"))[ENV.fetch('RACK_ENV', 'development')]
+$db_hash = YAML.load(ERB.new(File.read(File.join("config","database.yml"))).result)[ENV.fetch('RACK_ENV', 'development')]
 $database = Sequel.connect($db_hash.merge(logger: ::Logger.new(db_log_file)))
 
 module Server
