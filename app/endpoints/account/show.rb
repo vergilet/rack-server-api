@@ -1,7 +1,5 @@
-require_relative '../account'
-
 module Account
-  class Show < ::Server::Actions::Show
+  class Show < Model::Show
     validate_fields :id
   end
 end

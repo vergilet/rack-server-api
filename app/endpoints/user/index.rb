@@ -1,5 +1,3 @@
-require_relative '../user'
-
 module User
-  class Index < ::Server::Actions::Index; end
+  class Index < Model::Index; end
 end

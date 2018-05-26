@@ -1,7 +1,5 @@
-require_relative '../user'
-
 module User
-  class Patch < ::Server::Actions::Patch
+  class Patch < Model::Patch
     validate_fields :id
   end
 end

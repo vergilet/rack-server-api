@@ -1,7 +1,5 @@
-require_relative '../user'
-
 module User
-  class Delete < ::Server::Actions::Delete
+  class Delete < Model::Delete
     validate_fields :id
   end
 end

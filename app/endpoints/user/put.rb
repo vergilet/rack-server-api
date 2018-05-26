@@ -1,7 +1,5 @@
-require_relative '../user'
-
 module User
-  class Put < ::Server::Actions::Put
+  class Put < Model::Put
     validate_fields :id
   end
 end

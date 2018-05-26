@@ -4,16 +4,18 @@ require 'logger'
 require 'pg'
 require 'yaml'
 
+db_log_file = File.open('log/db.log', File::WRONLY | File::APPEND | File::CREAT)
+request_log_file = File.open('log/request.log', File::WRONLY | File::APPEND | File::CREAT)
+$logger = ::Logger.new(request_log_file)
+$logger.level = Logger::INFO
+
+$db_hash = YAML.load(File.read("config/database.yml"))[ENV['RACK_ENV']]
+$database = Sequel.connect($db_hash.merge(logger: ::Logger.new(db_log_file)))
+
 module Server
   module Core
     class Responder
-      DB = Sequel.connect({adapter: :postgres,
-      host: 'ec2-79-125-119-70.eu-west-1.compute.amazonaws.com',
-      port: 5432,
-      database: 'd9pseukhs9ukkm',
-      user: 'pruwpijfbzumyl',
-      password: 'ff435e3a4ac5a829b4b7f39e845af3d66c8a404a9de521387ca1faefc1201ad5',
-      max_connections: 10}.merge(logger: ::Logger.new('log/db.log')))
+      DB = $database
 
       class << self
         def validate_fields(*fields)
@@ -31,6 +33,7 @@ module Server
       attr_reader :request, :params, :headers
 
       def initialize(request)
+        $logger.info request
         @request = request
         @params = request.env['router.params']
         @headers = default_response_headers
