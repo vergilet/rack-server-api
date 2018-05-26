@@ -45,7 +45,7 @@ module Server
       end
 
       def db_table_name
-        Object.const_get(self.class.to_s.split('::').first).class_variable_get(:@@db_table_name)
+        Object.const_get(self.class.to_s.split('::').first).db_table_name
       end
 
       def call; end

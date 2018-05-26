@@ -1,3 +1,3 @@
 module User
-  include Model
+  extend Model
 end

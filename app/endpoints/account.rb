@@ -1,3 +1,3 @@
 module Account
-  include Model
+  extend Model
 end
