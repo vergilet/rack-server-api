@@ -3,6 +3,7 @@ require 'sequel'
 require 'logger'
 require 'pg'
 require 'yaml'
+require 'erb'
 
 db_log_file = File.open('log/db.log', File::WRONLY | File::APPEND | File::CREAT)
 request_log_file = File.open('log/request.log', File::WRONLY | File::APPEND | File::CREAT)
