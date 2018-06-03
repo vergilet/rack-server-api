@@ -14,4 +14,6 @@ $router = Hanami::Router.new(parsers: [:json]) do
 
   get     '/accounts',     to: action.call(Account::Index)
   get     '/accounts/:id', to: action.call(Account::Show)
+
+  get     'team/users',    to: action.call(Team::User::Index)
 end

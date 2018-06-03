@@ -12,3 +12,48 @@ I, [2018-05-26T12:36:54.409784 #84508]  INFO -- : (0.000140s) SET DateStyle = 'I
 I, [2018-05-26T12:36:57.387711 #84508]  INFO -- : (0.001449s) SELECT * FROM "users" WHERE ("id" = '10') LIMIT 1
 I, [2018-05-26T12:36:59.086895 #84508]  INFO -- : (0.001105s) SELECT * FROM "users"
 I, [2018-05-26T12:37:02.563780 #84508]  INFO -- : (0.000507s) SELECT * FROM "users" WHERE ("id" = '2') LIMIT 1
+I, [2018-06-03T18:39:19.812636 #44190]  INFO -- : (0.006134s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:39:19.812925 #44190]  INFO -- : (0.000155s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:39:19.813245 #44190]  INFO -- : (0.000259s) SET DateStyle = 'ISO'
+I, [2018-06-03T18:41:02.163302 #44888]  INFO -- : (0.000347s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:41:02.163515 #44888]  INFO -- : (0.000127s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:41:02.163663 #44888]  INFO -- : (0.000116s) SET DateStyle = 'ISO'
+I, [2018-06-03T18:43:52.789012 #46079]  INFO -- : (0.000344s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:43:52.789268 #46079]  INFO -- : (0.000168s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:43:52.789432 #46079]  INFO -- : (0.000125s) SET DateStyle = 'ISO'
+I, [2018-06-03T18:43:57.920532 #46079]  INFO -- : (0.022505s) SELECT * FROM "users"
+I, [2018-06-03T18:44:56.839724 #46517]  INFO -- : (0.000323s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:44:56.839993 #46517]  INFO -- : (0.000167s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:44:56.840180 #46517]  INFO -- : (0.000149s) SET DateStyle = 'ISO'
+I, [2018-06-03T18:45:01.272200 #46517]  INFO -- : (0.001071s) SELECT * FROM "users"
+E, [2018-06-03T18:45:12.161766 #46517] ERROR -- : PG::UndefinedTable: ERROR:  relation "team::users" does not exist
+LINE 1: SELECT * FROM "team::users"
+                      ^: SELECT * FROM "team::users"
+I, [2018-06-03T18:47:00.184822 #47366]  INFO -- : (0.000348s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:47:00.185048 #47366]  INFO -- : (0.000137s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:47:00.185224 #47366]  INFO -- : (0.000126s) SET DateStyle = 'ISO'
+I, [2018-06-03T18:48:17.712601 #47935]  INFO -- : (0.000315s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:48:17.713396 #47935]  INFO -- : (0.000125s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:48:17.713556 #47935]  INFO -- : (0.000116s) SET DateStyle = 'ISO'
+E, [2018-06-03T18:48:19.896886 #47935] ERROR -- : PG::UndefinedTable: ERROR:  relation "team::users" does not exist
+LINE 1: SELECT * FROM "team::users"
+                      ^: SELECT * FROM "team::users"
+I, [2018-06-03T18:49:14.483342 #48303]  INFO -- : (0.000341s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:49:14.483593 #48303]  INFO -- : (0.000154s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:49:14.483786 #48303]  INFO -- : (0.000156s) SET DateStyle = 'ISO'
+E, [2018-06-03T18:49:17.632555 #48303] ERROR -- : PG::UndefinedTable: ERROR:  relation "team_users" does not exist
+LINE 1: SELECT * FROM "team_users"
+                      ^: SELECT * FROM "team_users"
+I, [2018-06-03T18:50:11.735339 #48727]  INFO -- : (0.000272s) SET standard_conforming_strings = ON
+I, [2018-06-03T18:50:11.735529 #48727]  INFO -- : (0.000110s) SET client_min_messages = 'WARNING'
+I, [2018-06-03T18:50:11.735659 #48727]  INFO -- : (0.000102s) SET DateStyle = 'ISO'
+E, [2018-06-03T18:50:13.750320 #48727] ERROR -- : PG::UndefinedTable: ERROR:  relation "team_users" does not exist
+LINE 1: SELECT * FROM "team_users"
+                      ^: SELECT * FROM "team_users"
+I, [2018-06-03T18:50:19.696822 #48727]  INFO -- : (0.001838s) SELECT * FROM "users"
+I, [2018-06-03T18:50:22.219436 #48727]  INFO -- : (0.016216s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-03T18:50:25.508177 #48727]  INFO -- : (0.000377s) SELECT * FROM "users" WHERE ("id" = '100') LIMIT 1
+I, [2018-06-03T18:50:29.478446 #48727]  INFO -- : (0.001206s) SELECT * FROM "accounts"
+E, [2018-06-03T18:50:35.782314 #48727] ERROR -- : PG::UndefinedTable: ERROR:  relation "team_users" does not exist
+LINE 1: SELECT * FROM "team_users"
+                      ^: SELECT * FROM "team_users"

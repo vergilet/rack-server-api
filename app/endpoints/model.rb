@@ -7,6 +7,6 @@ Dir['./app/endpoints/model/*.rb'].each {|file| require file }
 
 module Model
   def db_table_name
-    (self.name.downcase + 's').to_sym
+    (self.name.downcase + 's').gsub('::', '_').to_sym
   end
 end
