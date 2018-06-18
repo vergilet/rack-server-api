@@ -57,3 +57,32 @@ I, [2018-06-03T18:50:29.478446 #48727]  INFO -- : (0.001206s) SELECT * FROM "acc
 E, [2018-06-03T18:50:35.782314 #48727] ERROR -- : PG::UndefinedTable: ERROR:  relation "team_users" does not exist
 LINE 1: SELECT * FROM "team_users"
                       ^: SELECT * FROM "team_users"
+I, [2018-06-05T19:49:35.943662 #12339]  INFO -- : (0.000712s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:49:35.943999 #12339]  INFO -- : (0.000222s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:49:35.944556 #12339]  INFO -- : (0.000256s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:49:46.389522 #12339]  INFO -- : (0.008405s) SELECT * FROM "users"
+E, [2018-06-05T19:49:55.812774 #12339] ERROR -- : PG::UndefinedTable: ERROR:  relation "team_users" does not exist
+LINE 1: SELECT * FROM "team_users"
+                      ^: SELECT * FROM "team_users"
+I, [2018-06-05T19:52:43.353118 #13690]  INFO -- : (0.000442s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:52:43.353368 #13690]  INFO -- : (0.000150s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:52:43.353568 #13690]  INFO -- : (0.000151s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:52:49.738541 #13690]  INFO -- : (0.007266s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-05T19:53:20.961646 #13909]  INFO -- : (0.000334s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:53:20.962600 #13909]  INFO -- : (0.000157s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:53:20.962856 #13909]  INFO -- : (0.000217s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:53:22.881352 #13909]  INFO -- : (0.002084s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-05T19:53:42.979023 #14121]  INFO -- : (0.000362s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:53:42.979258 #14121]  INFO -- : (0.000141s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:53:42.979504 #14121]  INFO -- : (0.000213s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:53:44.473513 #14121]  INFO -- : (0.001786s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-05T19:55:25.197715 #14826]  INFO -- : (0.000353s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:55:25.197984 #14826]  INFO -- : (0.000145s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:55:25.198217 #14826]  INFO -- : (0.000189s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:55:27.085064 #14826]  INFO -- : (0.001825s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-05T19:55:27.090364 #14826]  INFO -- : (0.004287s) SELECT * FROM "accounts"
+I, [2018-06-05T19:55:37.571846 #14902]  INFO -- : (0.000342s) SET standard_conforming_strings = ON
+I, [2018-06-05T19:55:37.572603 #14902]  INFO -- : (0.000150s) SET client_min_messages = 'WARNING'
+I, [2018-06-05T19:55:37.572817 #14902]  INFO -- : (0.000178s) SET DateStyle = 'ISO'
+I, [2018-06-05T19:55:40.666166 #14902]  INFO -- : (0.001490s) SELECT * FROM "users" WHERE ("id" = '1') LIMIT 1
+I, [2018-06-05T19:55:40.667009 #14902]  INFO -- : (0.000243s) SELECT * FROM "users"

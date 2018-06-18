@@ -11,6 +11,7 @@ $router = Hanami::Router.new(parsers: [:json]) do
   put     '/users/:id', to: action.call(User::Put)
   patch   '/users/:id', to: action.call(User::Patch)
   delete  '/users/:id', to: action.call(User::Delete)
+  get  '/users/:id/boards', to: action.call(User::Boards)
 
   get     '/accounts',     to: action.call(Account::Index)
   get     '/accounts/:id', to: action.call(Account::Show)
