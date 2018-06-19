@@ -58,8 +58,6 @@ module Server
         @response_code || default_response_code
       end
 
-      attr_reader :headers
-
       def body
         {
           code: http_response_code,
