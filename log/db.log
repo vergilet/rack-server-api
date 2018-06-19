@@ -282,3 +282,9 @@ I, [2018-06-19T16:30:15.564870 #90538]  INFO -- : (0.000516s) SET standard_confo
 I, [2018-06-19T16:30:15.565177 #90538]  INFO -- : (0.000179s) SET client_min_messages = 'WARNING'
 I, [2018-06-19T16:30:15.565368 #90538]  INFO -- : (0.000139s) SET DateStyle = 'ISO'
 I, [2018-06-19T16:30:17.256870 #90538]  INFO -- : (0.002566s) SELECT * FROM "boards" WHERE ("id" IN (SELECT "board_id" FROM "users_boards" WHERE ("user_id" = '1')))
+I, [2018-06-19T16:49:57.162213 #98619]  INFO -- : (0.000391s) SET standard_conforming_strings = ON
+I, [2018-06-19T16:49:57.162462 #98619]  INFO -- : (0.000156s) SET client_min_messages = 'WARNING'
+I, [2018-06-19T16:49:57.162671 #98619]  INFO -- : (0.000167s) SET DateStyle = 'ISO'
+I, [2018-06-19T16:50:05.336921 #98690]  INFO -- : (0.000339s) SET standard_conforming_strings = ON
+I, [2018-06-19T16:50:05.337146 #98690]  INFO -- : (0.000145s) SET client_min_messages = 'WARNING'
+I, [2018-06-19T16:50:05.337281 #98690]  INFO -- : (0.000106s) SET DateStyle = 'ISO'
